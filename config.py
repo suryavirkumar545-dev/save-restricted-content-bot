@@ -14,9 +14,9 @@ import os
 # Telegram Bot Credentials
 # ==============================
 
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "0")
 API_ID = int(os.environ.get("API_ID", "0"))
-API_HASH = os.environ.get("API_HASH", "")
+API_HASH = os.environ.get("API_HASH", "0")
 
 
 # ==============================
@@ -24,14 +24,14 @@ API_HASH = os.environ.get("API_HASH", "")
 # ==============================
 
 # Add admin user IDs separated by commas in environment variables
-ADMINS = [int(admin) for admin in os.environ.get("ADMINS", "").split(",") if admin]
+ADMINS = [int(admin) for admin in os.environ.get("ADMINS", "0").split(",") if admin]
 
 
 # ==============================
 # Database Configuration
 # ==============================
 
-DB_URI = os.environ.get("DB_URI", "")
+DB_URI = os.environ.get("DB_URI", "0")
 DB_NAME = os.environ.get("DB_NAME", "SaveRestricted2")
 
 
